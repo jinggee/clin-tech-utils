@@ -6,7 +6,7 @@ const defaultConfig = {
   baseURL: '/ajax',
   timeout: 15000,
   withCredentials: true,
-  validateStatus(status) {
+  validateStatus(status:number) {
     return status >= 200 && status <= 500;
   },
 }
